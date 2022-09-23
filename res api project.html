@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project on REST Api</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body{
+            background-color: beige;
+        }
+        form{
+            color: rgb(67, 58, 185);
+        }
+        /* input[type="button"]{
+            color:rgb(26, 60, 207) ;
+        } */
+        button[class="save"]{
+            background-color:rgb(61, 235, 17) ;
+        }
+        input[type="number"]{
+            color:rgb(119, 180, 236) ;
+        }
+        input[type="text"]{
+            color: rgb(119, 180, 236);
+        }
+        select{
+            color:rgb(119, 180, 236)  ;
+        }
+        li{
+            color:rgb(238, 9, 200)
+        }
+    </style>
+    <body>
+        <form id="expenses">
+            <label for="expenseamount">Expense Amount:</label>
+            <input type="number" id="expenseamount" name="expenseamount">
+            <label for="choosedescription">Choose Description:</label>
+            <input type="text" id="description" name="choosedescription">
+            <label for="category">Choose Catogory:</label>
+                <select id="category" name="category">
+                     <option value="movie">Movie</option>
+                     <option value="fuel">Fuel</option>
+                     <option value="electricity">Electricity</option>
+                     <option value="water">Water</option>
+                     <option value="wifi">Wifi</option>
+                </select><br><br>
+            <button class="save">Add Expense</button>
+        </form>
+        <main class="data">
+            
+        </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+        <script src="rest api project.js"></script>
+    </body>
+</html>
